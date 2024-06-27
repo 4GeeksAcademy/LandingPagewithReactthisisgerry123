@@ -1,12 +1,118 @@
+.container {
+  font-family: Arial, sans-serif;
+}
 
-/* 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.navbar .logo {
+  font-size: 24px;
+}
 
-*/
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar nav ul li {
+  margin: 0 10px;
+}
+
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  background-color: #f8f9fa;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 0 0 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin: 0 0 20px;
+}
+
+.hero .btn-primary {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.card-image {
+  background-color: #ddd;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.card-content h2 {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.card-content p {
+  font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar nav ul {
+    flex-direction: column;
+  }
+
+  .navbar nav ul li {
+    margin: 10px 0;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
